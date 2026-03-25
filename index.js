@@ -5125,9 +5125,9 @@ function checkIncomingModuleAPI() {
   ignoredModuleProp('onSbrkGrow');
 }
 var ASM_CONSTS = {
-  70304: ($0) => { var res = prompt(UTF8ToString($0)); return res ? parseInt(res, 10) : -1; },  
- 70381: ($0) => { var res = prompt(UTF8ToString($0)); return res ? parseFloat(res) : -1.0; },  
- 70458: ($0, $1, $2) => { var res = prompt(UTF8ToString($0)); if (!res) res = "Unknown"; stringToUTF8(res, $1, $2); }
+  70288: ($0) => { var res = prompt(UTF8ToString($0)); return res ? parseInt(res, 10) : -1; },  
+ 70365: ($0) => { var res = prompt(UTF8ToString($0)); return res ? parseFloat(res) : -1.0; },  
+ 70442: ($0, $1, $2) => { var res = prompt(UTF8ToString($0)); if (!res) res = "Unknown"; stringToUTF8(res, $1, $2); }
 };
 
 // Imports from the Wasm binary.

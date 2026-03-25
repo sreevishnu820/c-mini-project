@@ -1,7 +1,7 @@
 /*
 Project Title: Mini Banking System with Transaction Log
-Student Name: 
-Register No: 
+Student Name: Sree Vishnu M.S
+Register No: 25bce5223
 */
 
 #include <stdio.h>
@@ -67,17 +67,22 @@ void updateAccountFile(Account updatedAcc);
 
 int main() {
     int choice;
+    
+    
+    const char* menuMessage = 
+        "\n=== Mini Banking System ===\n"
+        "1. Create Account\n"
+        "2. Deposit\n"
+        "3. Withdraw\n"
+        "4. View Account Summary\n"
+        "5. Search Account\n"
+        "6. View Last 5 Transactions\n"
+        "7. Exit\n\n"
+        "Enter your choice: ";
+
     while (1) {
-        printf("\n=== Mini Banking System ===\n");
-        printf("1. Create Account\n");
-        printf("2. Deposit\n");
-        printf("3. Withdraw\n");
-        printf("4. View Account Summary\n");
-        printf("5. Search Account\n");
-        printf("6. View Last 5 Transactions\n");
-        printf("7. Exit\n");
         
-        choice = getSafeInt("Enter your choice: ");
+        choice = getSafeInt(menuMessage);
 
         switch (choice) {
             case 1: createAccount(); break;
